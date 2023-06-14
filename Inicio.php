@@ -48,7 +48,7 @@ if((!isset($_SESSION['nome'])==true) and (!isset($_SESSION['senha'])==true)){
         <div class="navigation_header" id="navigation_header">
 
             <a href="Inicio.php" class="active">Início</a>
-            <a href="Peças UB.php">UB</a>
+            <a href="PecasUB.php">UB</a>
             <a href="monitoramento.php">Painel</a>
             <a href="sair.php">Sair</a>
             

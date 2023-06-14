@@ -36,7 +36,7 @@ if((!isset($_SESSION['nome'])==true) and (!isset($_SESSION['senha'])==true)){
 			<div class="navigation_header" id="navigation_header">
 	
 				<a href="Inicio.php">Início</a>
-				<a href="Peças UB.php" class="active">UB</a>
+				<a href="PecasUB.php" class="active">UB</a>
 				<a href="monitoramento.php">Painel</a>
 				<a href="sair.php">Sair</a>
 				<div class="mensagemHora" id="mensagemHora">

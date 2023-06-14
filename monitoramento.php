@@ -297,7 +297,7 @@
         <div class="navigation_header" id="navigation_header">
 
             <a href="Inicio.php" >Início</a>
-            <a href="Peças UB.php">UB</a>
+            <a href="PecasUB.php">UB</a>
             <a href="monitoramento.php" class="active">Painel</a>
             <a href="sair.php">Sair</a>
         </div>

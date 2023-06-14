@@ -45,7 +45,7 @@
             <input type="password" name="senhacord" id="senhacord" placeholder="Senha do coordenador">
             <br/>
             <input type="submit" value="Cadastrar" name="submit" id="submit" class="functionbuttons"><br/>
-            <a href="Login.php">Voltar ao Login</a>
+            <a href="index.php">Voltar ao Login</a>
         </div>
     </form>
 </body>
