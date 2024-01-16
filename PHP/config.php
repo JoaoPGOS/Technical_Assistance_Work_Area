@@ -6,5 +6,4 @@
 
 
     $conexao = new mysqli($dbHost, $dbusername, $dbpassword, $dbName);
-    echo "Conectado";
 ?>

@@ -1,22 +1,13 @@
-
-:root:has(#light:checked){
-    --color-white:#ffffff ;
-    --color-red1:#F098B5 ;
-    --color-white2:#D5D5D5 ;
-    --color-white3:#ffffff;
-    --color-red4:#FF003A;
-    --color-white4:#C7C7C7;
-}
-
-:root:has(#dark:checked){
+:root{
     
-    --color-white: #2E2E2E;
-    --color-white2:#484748;
-    --color-white3: #000000;
-    --color-red4: #8300FF;
-
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
 
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -148,97 +139,252 @@ li{
     top {margin-left: -100vw;}
 }
 
-
-
-.column1{
-    padding-right: 6.4em;
-    padding-bottom: 1em;
-    padding-left: 2.1em;
-}
-.column2{
-
-    padding-bottom: 1em;
-    padding-right: 4.3em;
-}
-.column3{
-    padding-right: 5em;
-    padding-bottom: 1em;
-    padding-left: 1.8em;
+img{
+    border-radius: 100%;
+    z-index: 2;
 }
 
-.lines{
-    padding-right: 4.8em;
-    padding-bottom: 1em;
-    padding-left: 1.5em;
-    font-weight: bold;
-    font-size: small;
-}
 
-.content-table{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 15px;
-    left: 50%;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
-    padding-right: 0px;
-    padding-top: 10px;
-
-}
-
-.inicial{
-    padding-left: 250px;
+.i1 canvas{
+    padding-left: 0px;
     top: 5.5%;
     position: absolute;
 }
-.inicial2{
-    padding-left: 250px;
+.i1 img{
+    left: 0px;
+    top: 6%;
+    left: 11.5%;
+    position: absolute;
+}
+
+.i2 canvas{
+    left: 0px;
     top: 30%;
     position: absolute;
 }
-.inicial3{
-    padding-left: 250px;
+.i2 img{
+    left: 0px;
+    top: 30.5%;
+    left: 11.5%;
+    position: absolute;
+}
+
+.i3 canvas{
+    left: 0px;
+    top: 55%;
+    position: absolute;
+}
+.i3 img{
+    left: 0px;
+    top: 55.5%;
+    left: 11.5%;
+    position: absolute;
+}
+
+.i4 canvas{
+    left: 0px;
+    top: 80%;
+    position: absolute;
+}
+.i4 img{
+    left: 0px;
+    top: 80.5%;
+    left: 11.5%;
+    position: absolute;
+}
+
+.inicial canvas{
+    left: 250px;
+    top: 5.5%;
+    position: absolute;
+}
+
+.inicial img{
+    top: 6%;
+    left: 465px;
+    position: absolute;
+}
+
+
+.inicial2 canvas{
+    left: 250px;
+    top: 30%;
+    position: absolute;
+}
+.inicial2 img{
+    left: 465px;
+    top: 30.5%;
+    position: absolute;
+}
+
+.inicial3 canvas{
+    left: 250px;
+    top: 55%;
+    position: absolute;
+}
+.inicial3 img{
+    left: 465px;
+    top: 55.5%;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+}
+.inicial11 canvas{
+    left: 250px;
+    top: 80%;
+    position: absolute;
+}
+.inicial11 img{
+    left: 465px;
+    top: 80.5%;
+    position: absolute;
+}
+
+
+
+
+.inicial4 canvas{
+    left: 500px;
+    top: 5.5%;
+    position: absolute;
+}
+.inicial4 img{
+    left: 715px;
+    top: 6%;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+
+.inicial5 canvas{
+    left: 500px;
+    top: 30%;
+    position: absolute;
+}
+.inicial5 img{
+    left: 715px;
+    top: 30.5%;
+    position: absolute;
+}
+
+
+.inicial6 canvas{
+    left: 500px;
+    top: 55%;
+    position: absolute;
+}
+.inicial6 img{
+    left: 715px;
+    top: 55.5%;
+    position: absolute;
+}
+
+
+
+.inicial7 canvas{
+    left: 750px;
+    top: 5.5%;
+    position: absolute;
+}
+
+.inicial7 img{
+    left: 965px;
+    top: 6%;
+    position: absolute;
+}
+
+
+.inicial8 canvas{
+    left: 750px;
+    top: 30%;
+    position: absolute;
+}
+
+.inicial8 img{
+    left: 965px;
+    top: 30.5%;
+    position: absolute;
+}
+
+
+.inicial9 canvas{
+    left: 750px;
     top: 55%;
     position: absolute;
 }
 
-.inicial4{
-    padding-left: 500px;
-    top: 5.5%;
-    position: absolute;
-}
-.inicial5{
-    padding-left: 500px;
-    top: 30%;
-    position: absolute;
-}
-.inicial6{
-    padding-left: 500px;
-    top: 55%;
+.inicial9 img{
+    left: 965px;
+    top: 55.5%;
     position: absolute;
 }
 
-.inicial7{
-    padding-left: 750px;
-    top: 5.5%;
+
+.inicial12 canvas{
+    left: 500px;
+    top: 80%;
     position: absolute;
 }
-.inicial8{
-    padding-left: 750px;
-    top: 30%;
+.inicial12 img{
+    left: 715px;
+    top: 80.5%;
     position: absolute;
 }
-.inicial9{
-    padding-left: 750px;
-    top: 55%;
+
+.inicial13 canvas{
+    left: 750px;
+    top: 80%;
     position: absolute;
 }
+.inicial13 img{
+    left: 965px;
+    top: 80.5%;
+    position: absolute;
+}
+
+
+.inicial14 canvas{
+    left: 1000px;
+    top: 80%;
+    position: absolute;
+}
+.inicial14 img{
+    left: 1215px;
+    top: 80.5%;
+    position: absolute;
+}
+
+
+.inicial15 canvas{
+    left: 1250px;
+    top: 80%;
+    position: absolute;
+}
+.inicial15 img{
+    left: 1465px;
+    top: 80.5%;
+    position: absolute;
+}
+
+.inicial16 canvas{
+    left: 1500px;
+    top: 80%;
+    position: absolute;
+}
+
+.inicial16 img{
+    left: 1715px;
+    top: 80.5%;
+    position: absolute;
+}
+
+
+
+
+
 .inicial10{
-    padding-left: 1000px;
+    left: 1000px;
     top: 5.5%;
     position: absolute;
 }
@@ -268,3 +414,11 @@ input[type="radio"]{
 input[type="radio"]:checked{
     background-color: var(--color-red4);
 }
+
+
+.monitorimg{
+    border-radius: 100%;
+    z-index: 2;
+    position: absolute;
+}
+

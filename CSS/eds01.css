@@ -1,22 +1,14 @@
-
-:root:has(#light:checked){
-    --color-white:#ffffff ;
-    --color-red1:#F098B5 ;
-    --color-white2:#D5D5D5 ;
-    --color-white3:#ffffff;
-    --color-red4:#FF003A;
-    --color-white4:#C7C7C7;
-}
-
-:root:has(#dark:checked){
+:root{
     
-    --color-white: #2E2E2E;
-    --color-white2:#484748;
-    --color-white3: #000000;
-    --color-red4: #8300FF;
-
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
 
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -26,9 +18,11 @@ body{
     background-color: var(--color-white2);
     color:var(--color-red4);
 }
+
 img{
     width: 60px;
 }
+
 input{
     background-color: var(--color-white);
     color: var(--color-red4);
@@ -148,28 +142,58 @@ li{
     top {margin-left: -100vw;}
 }
 
-
-
-.column1{
-    padding-right: 6.4em;
-    padding-bottom: 1em;
-    padding-left: 2.1em;
+.toggleTable{
+    display: flex;
+    position: absolute;
+    color: var(--color-red4);
+    text-decoration: none;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    transition: 1s;
+    font-weight: bold;
 }
-.column2{
-
-    padding-bottom: 1em;
-    padding-right: 4.3em;
+.toggleTable:hover{
+    display: flex;
+    position: absolute;
+    color: var(--color-red4);
+    text-decoration: none;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--color-red4);
+    padding: 1em;
+    transition: 1s;
+    font-weight: bold;
+    border-radius: 15px;
 }
-.column3{
-    padding-right: 5em;
-    padding-bottom: 1em;
-    padding-left: 1.8em;
-}
 
+.total{
+    padding: 5px;
+    width: 30px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.totalFalta{
+    padding: 5px;
+    width: 200px;
+    font-size: large;
+    font-weight: bold;
+}
+.headerTB{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 3rem;
+}
+.linesTB{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 3rem;
+}
 .lines{
-    padding-right: 4.8em;
-    padding-bottom: 1em;
-    padding-left: 1.5em;
     font-weight: bold;
     font-size: small;
 }
@@ -181,14 +205,63 @@ li{
     background-color: var(--color-white);
     position: absolute;
     border-radius: 15px;
-    left: 50%;
-    top: 80%;
+    left: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    padding-right: 0px;
     padding-top: 10px;
+    overflow-y: scroll;
+    height: 400px;
+    
 
 }
+.content-table12{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--color-white);
+    position: absolute;
+    border-radius: 15px;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    height: 400px;
+
+
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--color-red4);
+  }
+  html ::-webkit-scrollbar-track {
+    background: var(--color-white3);
+    border-radius: 15px;
+  }
+
+
+.btn_edit{
+    color: var(--color-red4);
+    background-color: var(--color-white);
+    padding-left: 1rem;
+    height: 20px;
+    width: 20px;
+
+}
+.btn_edit:hover{
+    color:  var(--color-hover);
+    opacity: 0.8;
+    padding-left: 1rem;
+    height: 20px;
+    width: 20px;
+
+}
+
 ul{
     display: flex;
     gap: 1rem;
@@ -213,4 +286,51 @@ input[type="radio"]{
 
 input[type="radio"]:checked{
     background-color: var(--color-red4);
+}
+
+.testeimg{
+    border-radius: 100%;
+    border-color: transparent;
+    box-shadow: 0, 0, 15px #000000;
+}
+.navigation_header a:hover{
+    text-decoration: none;
+    color: var(--color-red4);
+    background-color: var(--color-white3);
+    border: solid 2px var(--color-red4);
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s;
+
+}
+.changeDate{
+    display: flex;
+    position: absolute;
+    right: 50%;
+    top: 13px;
+}
+.changeDate input{
+    background-color: var(--color-red4);
+    color: var(--color-white3);
+    cursor: pointer;
+}
+
+.filtro{
+    display: flex;
+    right: 10px;
+    top: 100px;
+    position: fixed;
+    background-color: var(--color-white3);
+    padding: 10px;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: start;
+}
+.filtro input[type="submit"]{
+    background-color: var(--color-red4);
+    color: var(--color-white3);
+    cursor: pointer;
 }

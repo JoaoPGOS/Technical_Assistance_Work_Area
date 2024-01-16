@@ -1,0 +1,109 @@
+:root{
+    --color-white:#FFE2E2 ;
+    --color-red1:#FF256A;
+    --color-white2:#D5D5D5 ;
+    --color-white3:#989898;
+    --color-red4:#FF003A;
+    --color-white4:#C7C7C7;
+    --color-white5:#DADADA;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-white2);
+    color:var(--color-red4);
+}
+.cadastro {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+}
+
+input{
+    background-color: transparent;
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid var(--color-red4);
+    font-size: medium;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.functionbuttons{
+    background-color: transparent;
+    font-size: large;
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: var(--color-red4);
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+}
+
+
+
+.functionbuttons[type="submit"]:hover{
+    background-color: transparent;
+    font-size: large;
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid var(--color-red4);
+    padding: 0.5em;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    transition: 0.5s;
+
+}
+.title{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: var(--color-red4);
+    transition: 1s;
+    font-weight: bold;
+    transition:0.5s;
+}
+
+a:hover{
+    text-decoration: none;
+    border-radius: 30px;
+    color: var(--color-red4);
+    transition: 1s;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid var(--color-red4);
+    background-color: transparent;
+    transition:0.5s;
+
+}
+
+
+select{
+    background-color:transparent;
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid var(--color-red4);
+    border-radius: 30px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+option{
+    background-color: white;
+}

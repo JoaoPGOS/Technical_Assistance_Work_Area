@@ -1,0 +1,28 @@
+:root{
+    
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
+
+}
+
+.btn_edit{
+    color: var(--color-red4);
+    background-color: var(--color-white);
+    padding-left: 1rem;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+}
+.btn_edit:hover{
+    color:  var(--color-hover);
+    opacity: 0.8;
+    padding-left: 1rem;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: transparent;
+}

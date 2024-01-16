@@ -1,20 +1,10 @@
-
-:root:has(#light:checked){
-    --color-white:#ffffff ;
-    --color-red1:#F098B5 ;
-    --color-white2:#D5D5D5 ;
-    --color-white3:#ffffff;
-    --color-red4:#FF003A;
-    --color-white4:#C7C7C7;
-}
-
-:root:has(#dark:checked){
+:root{
     
-    --color-white: #2E2E2E;
-    --color-white2:#484748;
-    --color-white3: #000000;
-    --color-red4: #8300FF;
-
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
 
 }
 *{
@@ -118,7 +108,7 @@ li{
         position:absolute;
         flex-direction: column;
         top: 0;
-        background-color: var(--color-white);
+        background-color: var(--color-white3);
         height: 100%;
         width: 35ew;
         padding: 1em;
@@ -178,25 +168,30 @@ li{
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--color-white);
+    position: absolute;
     border-radius: 15px;
     left: 50%;
-    top: 50%;
-    bottom: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     padding: 40px;
     padding-right: 0px;
     padding-top: 10px;
+    overflow-y: scroll;
+    height: 400px;
 
 }
-canvas{
-    display: flex;
-    position: absolute;
-}
-
-.distancia{
-    padding-left: 100px;
-}
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--color-red4);
+  }
+  html ::-webkit-scrollbar-track {
+    background: var(--color-white3);
+    border-radius: 15px;
+  }
 ul{
     display: flex;
     gap: 1rem;

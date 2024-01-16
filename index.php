@@ -1,4 +1,6 @@
 <?php
+include_once('PHP/config.php');
+
 
 
 ?>
@@ -7,72 +9,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS\Login.css">
+    <link rel="stylesheet" href="CSS\index_style_2.css">
     <title>Login</title>
 </head>
 <body>
-    <form action="testLogin.php" method="post">
+    <form action="confirmLogin.php" method="post">
         <div class="login">
             <h1 class="title">Login</h1>
-            <input type="text" name="nome" id="usuario" placeholder="Usuário">
+            <input type="text" name="nome" id="usuario" placeholder="Usuário" onchange="">
             <br/>
             <input type="password" name="senha" id="senha" placeholder="Senha">
             <br/>
-            <input type="text" name="horario" id="horario"placeholder="Horario Ex: 11h ás 20h">
-            <br/>
+            <input type="hidden" name="horario" id="horario" value="">
+            <input type="date" name="date" value="" id="teste">
+
+            <br>
             <input type="submit" value="Entrar" name="submit" id="submit" class="functionbuttons">
             <br/>
+
             <a class="linkColors" href="Cadastro.php">Cadastro</a>
+            <br>
+
     </div>
     </form>
-    <ul>
-                            <li onclick="theme1()" value="0" id="lightmode"><input name="color" id="light" type="radio" checked></li>
-                            <li onclick="theme2()" value="1" id="darkmode"><input name="color" id="dark" type="radio"></li>
-                        </ul>
                         <script>
-                            dataLight = document.getElementById('lightmode');
-                            dataDark = document.getElementById('darkmode');
+datanova = document.getElementById('teste');
 
+function dataFormatada(){
 
-const localStorageMode = 'lightmode'
-
-
-
-function theme1(){
+    let data = new Date(),
+        dia  = data.getDate().toString(),
+        diaF = (dia.length == 1) ? '0'+dia : dia,
+        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+        mesF = (mes.length == 1) ? '0'+mes : mes,
+        anoF = data.getFullYear();
     
-    let Mode = JSON.parse(localStorage.getItem(localStorageMode) || "[]")
 
-    Mode.push({
-        name: dataLight.value
-    });
+    var dataF = `${anoF}-${mesF}-${diaF}`;
 
-    localStorage.setItem(localStorageMode,JSON.stringify(Mode))
-}
 
-function theme2(){
+    datanova.value = dataF;
+
     
-    let Mode = JSON.parse(localStorage.getItem(localStorageMode) || "[]")
-
-    Mode.push({
-        name: dataDark.value
-    });
-
-    localStorage.setItem(localStorageMode,JSON.stringify(Mode))
-
 }
-
-function validation(){
-    let Mode = JSON.parse(localStorage.getItem(localStorageMode) || "[]")
-    var i = Mode.length - 1;
-    if(`${Mode[i]['name']}` == "1"){
-        dataDark.innerHTML = "<input name='color' id='dark' type='radio' checked>"
-        dataLight.innerHTML = "<input name='color' id='light' type='radio'>"
-    }
-}
-
-validation();
+dataFormatada();
 
 
-                        </script>
+
+</script>
 </body>
 </html>

@@ -25,8 +25,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS\cadastro.css">
-    <script src="JS\passapag.js"></script>
+    <link rel="stylesheet" href="CSS\cadn.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -40,7 +39,7 @@
             <br/>
             <input type="password" name="senhaconf" id="senhaconf" placeholder="Digite novamente a senha">
             <br/>
-            <input type="text" name="horario" id="horario" placeholder="Horário Ex: 11h ás 20h">
+                <input type="text" name="horario" id="horario" placeholder="Horario Ex: 10h as 20h">
             <br/>
             <input type="password" name="senhacord" id="senhacord" placeholder="Senha do coordenador">
             <br/>

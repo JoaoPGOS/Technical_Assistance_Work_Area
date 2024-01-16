@@ -1,0 +1,164 @@
+:root{
+    
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
+
+}
+.selector{
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    z-index: 3;
+
+
+}
+@media screen {
+    .serviceBtn{
+        display:block;
+        color: var(--color-red4);
+        border: none;
+        border-radius: 100%;
+        background-color:transparent;
+    }
+    .serviceCad{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        position:fixed;
+        flex-direction: column;
+        bottom: 0;
+        background-color: var(--color-white3);
+        height: 60%;
+        width: 35ew;
+        padding: 1em;
+        margin-bottom: 100vw;
+        animation-duration: 1s;
+        padding-left: 30px;
+        padding-right: 30px;
+        z-index: 2;
+
+    } 
+    input{
+        background-color: var(--color-white);
+        color: var(--color-red4);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: var(--color-red4);
+        border-radius: 8px;
+        padding: 0.5em;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .inputrow{
+        display: flex;
+        background-color: var(--color-white2);
+        color: var(--color-red4);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: var(--color-red4);
+        border-radius: 8px;
+        padding: 0.5em;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+}
+input[type="search"]{
+    background-color: var(--color-white);
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: var(--color-red4);
+    border-radius: 8px;
+    padding: 0.5em;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 15px;
+
+}
+
+@keyframes showserviceBox{
+    from {margin-bottom: -100vw;}
+    to {margin-bottom: 0vw;}
+}
+@keyframes showserviceBoxback{
+    from {margin-bottom: 0vw;}
+    to {margin-bottom: -100vw;}
+}
+
+.column1{
+    padding-right: 6.4em;
+    padding-bottom: 1em;
+    padding-left: 2.1em;
+}
+.column2{
+
+    padding-bottom: 1em;
+    padding-right: 4.3em;
+}
+.column3{
+    padding-right: 5em;
+    padding-bottom: 1em;
+    padding-left: 1.8em;
+}
+
+.lines{
+    padding-right: 4.8em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    font-weight: bold;
+    font-size: small;
+}
+
+.lines input{
+    background-color: var(--color-white);
+    color: var(--color-red4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.lines input:hover{
+    background-color: var(--color-white5);
+    color: var(--color-red4);
+    border: 2px solid var(--color-red4);
+    padding: 0.5em;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+
+
+.content-table{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--color-white);
+    position: absolute;
+    border-radius: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    padding-right: 0px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    height: 400px;
+
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--color-red4);
+  }
+  html ::-webkit-scrollbar-track {
+    background: var(--color-white3);
+    border-radius: 15px;
+  }

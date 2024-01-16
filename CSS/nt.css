@@ -1,0 +1,43 @@
+:root{
+    
+    --color-white: #000020;
+    --color-white2:#171a4a;
+    --color-white3: #000020;
+    --color-red4: #9f90ea;
+    --color-hover: #675cb0;
+
+}
+
+.notes{
+    color: var(--color-red4);
+    background-color: var(--color-white3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-color: none;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.attNotes{
+    color: var(--color-red4);
+    background-color: var(--color-white3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-color: none;
+    border-radius: 15px;
+    padding: 8px;
+}
