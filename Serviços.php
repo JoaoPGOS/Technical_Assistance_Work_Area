@@ -140,7 +140,7 @@ if((!isset($_SESSION['nome'])==true) and (!isset($_SESSION['senha'])==true)){
         <input type="submit" name="submitDate" value="Mudar">
         </form>
         </div>
-        <label class="total">Total Laboratório HHP</label><br>
+        <label class="total">Total Laboratório</label><br>
         <input class="total" type="text" value="<?php echo "$total"; ?>">
         <?php 
         error_reporting(0);

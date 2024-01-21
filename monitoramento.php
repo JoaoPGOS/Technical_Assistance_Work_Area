@@ -412,7 +412,7 @@ $catchimg = mysqli_query($conexao, "SELECT * FROM usuários where iduser > 5");
     geral = document.getElementById("t13");
 
 // Example datasets for X and Y-axes 
-var serviço = ["Projeto UB", "Reparo", "WRT", "Ag. Peça", "Perda", "Sem defeito", "Laudo", "Montagem", "Orçamento", "OQC", "SAW", "Fotos"]; 
+var serviço = ["Troca Frontal", "Reparo", "Teste de resistência", "Ag. Peça", "Perda", "Sem defeito", "Laudo", "Montagem", "Orçamento", "Qualidade", "Avaliação do aparelho", "Fotos"]; 
 var dados =  [<?php echo "$novosdados[0]" ?>, <?php echo "$novosdados[1]" ?>, <?php echo "$novosdados[2]" ?>, <?php echo "$novosdados[3]" ?>, <?php echo "$novosdados[4]" ?>, <?php echo "$novosdados[5]" ?>,<?php echo "$novosdados[6]" ?>,<?php echo "$novosdados[7]" ?>,<?php echo "$novosdados[8]" ?>,<?php echo "$novosdados[9]" ?>, <?php echo "$novosdados[10]" ?>,<?php echo "$novosdados[11]" ?>,0]
 var dadosa = [<?php echo "$novosdados1[0]" ?>, <?php echo "$novosdados1[1]" ?>, <?php echo "$novosdados1[2]" ?>, <?php echo "$novosdados1[3]" ?>, <?php echo "$novosdados1[4]" ?>, <?php echo "$novosdados1[5]" ?>,<?php echo "$novosdados1[6]" ?>,<?php echo "$novosdados1[7]" ?>,<?php echo "$novosdados1[8]" ?>,<?php echo "$novosdados1[9]" ?>,<?php echo "$novosdados1[10]" ?>, <?php echo "$novosdados1[11]" ?>,0]
 var dadosb = [<?php echo "$novosdados2[0]" ?>, <?php echo "$novosdados2[1]" ?>, <?php echo "$novosdados2[2]" ?>, <?php echo "$novosdados2[3]" ?>, <?php echo "$novosdados2[4]" ?>, <?php echo "$novosdados2[5]" ?>,<?php echo "$novosdados2[6]" ?>,<?php echo "$novosdados2[7]" ?>,<?php echo "$novosdados2[8]" ?>,<?php echo "$novosdados2[9]" ?>,<?php echo "$novosdados2[10]" ?>, <?php echo "$novosdados2[11]" ?>,0]
